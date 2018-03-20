@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: people
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  email      :string
+#  edad       :integer
+#  genero     :boolean
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  email: MyString
+  edad: 1
+  genero: false
+
+two:
+  name: MyString
+  email: MyString
+  edad: 1
+  genero: false
