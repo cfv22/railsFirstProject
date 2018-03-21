@@ -1,0 +1,11 @@
+<div class="jumbotron" >
+<h1 class=> <%= @ppl.name %> </h1>
+<%= form_for @ppl, url: {action: "update"} do |ppl| %>
+    <%= ppl.text_field :email%>
+    <%= ppl.text_field :edad%>
+    <%= ppl.text_field :description%>
+     <%= ppl.submit :description%>
+     <% end%>
+     
+</div> 
+<%= link_to "Personas", people_path %> 

@@ -1,0 +1,8 @@
+<div class="jumbotron" >
+<h1 class=> <%= @person.name %> </h1>
+<p> Email: <%= @person.email %></p>
+<p>Edad: <%= @person.edad %></p>
+<p>Genero: <%= @person.genero ? "Female" : "Male" %></p>
+<p>Genero: <%= @person.description %></p>
+</div>
+<div> <%= link_to "Personas", people_path %> 

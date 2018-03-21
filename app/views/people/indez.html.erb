@@ -8,7 +8,8 @@
       <th>name</th>
       <th>email</th>
       <th>age</th>
-      <th>gender</th>
+      <th>Detalle</th>
+      <th>Editar</th>
     </tr>
   </thead>
   <tbody>
@@ -18,7 +19,8 @@
         <td><%= person.name %></td>
         <td><%= person.email %></td>
         <td><%= person.edad %></td>
-        <td><%= person.genero == true ? "Male" : "Female" %></td>
+        <td><%= link_to "Ver", people_show_path(person.id)%></td>
+         <td><%= link_to "Editar", people_edit_path(person.id)%></td>
       </tr>
     <%end%>
   </tbody>
